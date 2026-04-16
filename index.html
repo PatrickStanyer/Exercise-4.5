@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SVG House</title>
+</head>
+
+<body>
+
+  <h1>SVG House</h1>
+
+  <!-- Static SVG house -->
+  <svg width="600" height="400" style="border:1px solid lightgray; background: blue;">
+      <!-- Grass -->
+      <rect x="0" y="250" width="600" height="150" fill="lightgreen" />
+
+      <!-- House body -->
+      <rect x="200" y="170" width="180" height="130" fill="#b5651d" />
+
+      <!-- Roof -->
+      <polygon points="190,170 290,110 390,170" fill="red"/>
+
+      <!-- Door -->
+      <rect x="270" y="210" width="40" height="90" fill="#654321" />
+      <circle cx="305" cy="255" r="3" fill="black" />
+
+      <!-- Windows -->
+      <g id="windows" fill="lightgrey" stroke="black" transform="translate(235, 200)">
+        <circle cx="0" cy="0" r="25" />
+        <circle cx="110" cy="0" r="25" />
+      </g>
+
+      <!-- Path -->
+      <path d="M 290 303 Q 230 360 220 410" fill="none" stroke="grey" stroke-width="15" />
+
+      <!-- Tree -->
+      <rect x="120" y="210" width="20" height="70" fill="#8b4513" />
+      <circle cx="130" cy="190" r="30" fill="lightgreen" />
+      <circle cx="150" cy="200" r="25" fill="lightgreen" />
+      <circle cx="110" cy="200" r="25" fill="lightgreen" />
+
+      <!-- Moon -->
+      <rect x="500" y="20" width="40" height="40" fill="white" />
+
+      <!-- Chimney -->
+      <rect x="330" y="85" width="40" height="50" fill="brown" />
+      <polygon points="330,133 370,133 370,163" fill="brown"/>
+  </svg>
+
+  <!-- D3 bar chart container (correct location) -->
+  <div class="responsive-svg-container"></div>
+
+  <!-- Load scripts -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
+
+
